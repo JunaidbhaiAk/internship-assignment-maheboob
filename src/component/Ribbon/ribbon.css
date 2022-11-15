@@ -1,0 +1,22 @@
+.ribbon{
+    width: 100%;
+    padding: 30px 187px;
+    background-color: #fff;
+}
+
+.ribbon__text{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #000000;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:900px) {
+    .ribbon{
+      padding: 0;
+      text-align: center;
+    }
+  }

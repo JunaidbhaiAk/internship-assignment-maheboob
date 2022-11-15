@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { useEffect, useState } from "react";
+import "./App.css";
+import Navbar from "./component/Navbar/Navbar";
+import Ribbon from "./component/Ribbon/Ribbon";
+import Topcard from "./component/Topcard/Topcard";
+import Featurecard from "./component/Featurecard/Featurecard";
+import Footer from "./component/Footer/Footer";
 function App() {
+  const [show, setShow] = useState(0);
+  const [width,setWidth] = useState(window.innerWidth);
+  useEffect(()=>{
+    window.addEventListener("resize", () => setWidth(window.innerWidth));
+  },[])
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <Ribbon show={show} setShow={setShow}/>
+      <div className="middlescreen">
+        <Topcard show={show} screenWidth={width}/>
+        <Featurecard setShow={setShow} show={show}/>
+        <Footer show={show} setShow={setShow}/>
+      </div>
     </div>
   );
 }

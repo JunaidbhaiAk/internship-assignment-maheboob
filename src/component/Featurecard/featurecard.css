@@ -1,0 +1,152 @@
+.featurecard {
+  margin-top: 50px;
+}
+
+.featurecard__heading {
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #800080;
+}
+
+.featurecard__cardcontainer {
+  max-width: 760px;
+  column-gap: 50px;
+  row-gap: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.featurecard__card {
+  display: flex;
+  align-items: center;
+}
+
+.card__image {
+  width: 65px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  background-color: #d9d9d940;
+}
+
+.card__info {
+  max-width: 280px;
+  margin-left: 20px;
+}
+.card__info span {
+  display: block;
+}
+
+.card__title {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.card__para {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #4d4d4d;
+}
+
+
+.friendcard__heading {
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 1rem;
+}
+.friendcard__heading h2 {
+  font-weight: 600;
+  color: #800080;
+}
+.friend__count {
+  color: #626262;
+  font-weight: 400;
+}
+
+.friendcard__container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.fcard{
+    margin-right: 20px;
+    width: 350px;
+    background: linear-gradient(270deg, #800080 0%, #FF864C 100%);
+    color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.fcard__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.fcard__top__name{
+font-size: 16px;
+font-weight: 700;
+line-height: 24px;
+}
+.fcard__top__date{
+font-size: 14px;
+font-weight: 400;
+line-height: 21px;
+}
+.fcard__tagsabout{
+  margin-bottom: 14px;
+  font-weight: 500;
+  font-size: 14px;
+}
+.fcard__tagscontainer{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.tag{
+  padding: 4px 9px;
+  border-radius: 20px;
+  margin-right: 12px;
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: 400;
+  border: 1.5px solid #EEAEAE;
+}
+
+.fcard__footer{
+  margin-top: 10px;
+}
+.fcard__footer__amount{
+  margin-left: 10px;
+  font-weight: 600;
+  font-size: 24px;
+}
+@media screen and (max-width: 600px) {
+  .featurecard__heading {
+    text-align: center;
+  }
+
+  .featurecard__cardcontainer {
+    width: 100%;
+    justify-items: center;
+  }
+}
+
+
+@media screen and (max-width:1200px) {
+  .friendcard__container{
+    justify-content: center;
+  }
+  .fcard{
+    margin-bottom: 20px;
+  }
+}
