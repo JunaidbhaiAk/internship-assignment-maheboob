@@ -15,7 +15,7 @@ const Topcard = ({ show,screenWidth }) => {
   return (
     <div className="topcard" style={screenWidth > 900 ? {justifyContent:'space-between'} : {justifyContent: show ? 'space-between' : 'center'}}>
       <div className="topcard__referral" style={screenWidth > '900' ? styleForRef : {justifyContent:'space-between'}}>
-        <div className="topcard__referral__textcontainer" style={{marginBottom:show ? '0' : '30px'}}>
+        <div className="topcard__referral__textcontainer" >
           {referralCard.map(({ title, value }) =>
             genrateText({ title, value,show })
           )}

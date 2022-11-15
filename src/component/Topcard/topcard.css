@@ -123,6 +123,15 @@
     }
 }
 
+@media screen and (max-width:480px) {
+    .topcard__referral_button{
+        font-size: 14px;
+    }
+    .topcard__code__box{
+        padding: 15px 30px;
+    }
+}
+
 @media screen and (max-width:1200px) {
     .topcard{
         justify-content: center;
